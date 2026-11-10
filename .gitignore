@@ -1,0 +1,6 @@
+node_modules/
+.reels-render.mp4
+.reels-frames/
+.claude/
+.c0detnr/
+.planning/

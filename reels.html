@@ -1,0 +1,470 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#000000"><title>Tuco &amp; Tuco — Reels</title><style>@font-face{font-family:'Comic Neue';src:url('assets/fonts/comic-neue-bold.ttf');font-weight:700;font-display:block}
+@font-face{font-family:'Special Elite';src:url('assets/fonts/special-elite.ttf');font-display:block}
+:root{color-scheme:dark;--scene-scale:1}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;color:#f5edcf;font-family:'Comic Neue',sans-serif;font-weight:700}
+#stage{position:absolute;left:50%;top:50%;width:1080px;height:1920px;transform:translate(-50%,-50%) scale(var(--scene-scale));transform-origin:center;overflow:hidden}svg{display:block;width:1080px;height:1920px}.ink{stroke:#101827;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.comic{font-family:'Comic Neue',sans-serif;font-weight:700}.type{font-family:'Special Elite',monospace}
+#controls{position:fixed;z-index:5;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px;align-items:center;background:#101b30;padding:10px;max-width:96vw;opacity:0;transition:opacity .15s}body:hover #controls,#controls:focus-within{opacity:1}button,select{font:700 15px 'Comic Neue';color:#f5edcf;background:#263951;border:0;padding:10px;min-height:44px;cursor:pointer}button:first-child{background:#ffce58;color:#101b30}select{max-width:170px}input{width:100px;accent-color:#ffce58}output{white-space:nowrap;font-size:14px}:focus-visible{outline:3px solid #ffce58;outline-offset:2px}.sr-only{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}.render #controls{display:none!important}
+@media(max-width:540px){#controls{flex-wrap:wrap;justify-content:center;width:96vw;bottom:8px}select{max-width:135px}}
+</style></head><body><main id="stage"><svg id="film" viewBox="0 0 1080 1920" role="img" aria-labelledby="filmTitle filmDesc">
+<title id="filmTitle">Tuco &amp; Tuco — 13 sahnelik sesli çizgi film</title><desc id="filmDesc">Gece meydanında iki sivil polis, iki Tuco ve olan bitene inanamayan bir heykel. Replikler konuşma balonlarında ve altyazıda görünür.</desc>
+<defs>
+<pattern id="paving" width="180" height="64" patternUnits="userSpaceOnUse"><path d="M0 63H180M90 0V63" fill="none" stroke="#34485b" stroke-width="2"/></pattern>
+<g id="bike" class="ink"><circle cx="-63" cy="0" r="31" fill="#101b30"/><circle cx="66" cy="0" r="31" fill="#101b30"/><circle cx="-63" cy="0" r="14" fill="#879ca4"/><circle cx="66" cy="0" r="14" fill="#879ca4"/><path d="M-63 0L-25-52 26 0H-63L-10-32H50L66 0M50-32L37-70H61" fill="none" stroke="#e2b65c"/><path d="M-42-54H-8M15-45H42" stroke="#101827" stroke-width="13"/><path d="M-22-52Q-12-82 22-61L35-43Z" fill="#b66659"/><path d="M53-61H66" stroke="#f5edcf"/></g>
+<g id="banknote" class="ink" stroke-width="3"><path d="M-39-19H39V19H-39Z" fill="#b7c59a"/><ellipse rx="12" ry="14" fill="none"/><path d="M-29-7V7M29-7V7"/></g>
+</defs>
+<rect width="1080" height="1920" fill="#182b47"/>
+<g id="camera">
+<g id="stars" fill="#eee5c9"></g>
+<path d="M938 95a60 60 0 1 0 60 85 52 52 0 0 1-60-85" fill="#ffdb87"/>
+<g fill="#1e3651" stroke="#122139" stroke-width="5"><path d="M0 1070V890H70V830H175V940H240V865H335V1060M620 1070V910H690V850H775V930H850V805H925V890H1030V845H1080V1070"/></g>
+<g id="windows" fill="#b39563" opacity=".55" transform="translate(0 580) scale(.675)"/>
+<path d="M0 1070Q430 1010 1080 1040V1920H0Z" fill="#3d5260"/>
+<path d="M0 1140Q540 1080 1080 1120V1920H0Z" fill="url(#paving)"/>
+<path d="M0 1090Q540 1030 1080 1060" stroke="#73818a" stroke-width="13" fill="none"/>
+<g id="windmill" opacity="0" transform="translate(1435 410)"><path d="M-45 125L-24-10H24L45 125Z" fill="#bda574" class="ink"/><g id="sails" stroke="#f5edcf" stroke-width="16"><path d="M0 0V-88M0 0H88M0 0V88M0 0H-88"/><path d="M-20-82H8M82-20V8M20 82H-8M-82 20V-8" stroke-width="25"/></g></g><g class="ink" id="lamp"><path d="M155 605V210Q155 174 197 174" fill="none" stroke="#091526" stroke-width="15"/><path d="M168 175Q198 128 231 175Z" fill="#172335"/><path d="M172 178H229L214 215H186Z" fill="#ffe29a"/><path d="M188 218L55 610H345L212 218" fill="#ffda83" opacity=".07" stroke="none"/><path d="M126 608H186" stroke-width="15"/></g><g id="policeLights" opacity="0"><ellipse cx="70" cy="1030" rx="100" ry="100" fill="#5abaff" opacity=".4"/><ellipse cx="1020" cy="1040" rx="100" ry="100" fill="#f46c6c" opacity=".45"/></g>
+<g id="statue" transform="translate(806 520)" class="ink">
+<path d="M-74 100H74L87 156H-88Z" fill="#7a8b92"/><path d="M-107 156H106V178H-107Z" fill="#9ba5a3"/><rect x="-62" y="119" width="124" height="24" rx="2" fill="#344855" stroke="none"/><text x="0" y="136" text-anchor="middle" fill="#e3dfc9" stroke="none" font-size="12" class="comic">CUMHURİYET</text>
+<g id="statueUpper"><path d="M-27 31L-35 99M23 30L36 99" fill="none" stroke="#91a39e" stroke-width="25"/><path d="M-43-77Q0-96 41-72L49 30Q0 51-49 30Z" fill="#8b9e98"/><path d="M-41-60L-73-13-39 8M41-60L71-100 73-143" fill="none" stroke="#91a39e" stroke-width="18"/><path id="facepalm" d="M-43-57L-69-115-20-137" fill="none" stroke="#adbab0" stroke-width="15" opacity="0"/><path d="M-29-99L-29-135Q-32-182 6-185Q42-182 34-135L25-99Z" fill="#a5b4aa"/><path d="M-33-155Q-42-196 6-198L38-177 29-154-1-171Z" fill="#637e7b"/><ellipse id="statueEyeL" cx="-13" cy="-137" rx="4" ry="6" fill="#172b30" stroke="none"/><ellipse id="statueEyeR" cx="15" cy="-137" rx="4" ry="6" fill="#172b30" stroke="none"/><path id="statueBrows" d="M-22-151L-8-152M9-152L23-150" fill="none" stroke-width="4"/><path id="statueMouth" d="M-9-115Q3-107 16-117" fill="none" stroke-width="4"/></g>
+<g id="sigh" opacity="0" stroke="#c4d1ca" stroke-width="3" fill="none"><path d="M33-108Q76-130 91-105M40-97Q81-115 103-88"/></g></g>
+<g id="motorcycles"><g id="bike1" transform="translate(1120 620) scale(.75)"><use href="#bike"/></g><g id="bike2" transform="translate(1385 600) scale(.69)"><use href="#bike"/></g></g>
+<g id="bench" class="ink"><path d="M270 620V731M620 620V731" stroke="#141f2d" stroke-width="13"/><path d="M248 573H646V604H248ZM248 613H646V642H248ZM228 658H665V681H228Z" fill="#a8784d"/><path d="M262 586H632M259 628H632M251 668H645" stroke="#d5a06b" stroke-width="3"/><path d="M284 684L274 735M613 684L628 735" stroke-width="14"/></g>
+<g id="characters"></g>
+<g id="package" class="ink"><path d="M-26-22Q0-31 27-22L34 18Q0 30-34 18Z" fill="#e8bd43"/><path d="M-15-22L-11-35H11L16-22M-28-5L26 5" fill="none" stroke-width="4"/><path d="M-13-4L11-7 16 12H-12Z" fill="#f9e593" stroke-width="3"/></g>
+<g id="money"></g>
+<g id="confetti"></g>
+<rect id="desert" width="1600" height="790" fill="#e5b73d" opacity="0" pointer-events="none"/>
+</g>
+<g id="sceneHeading" fill="#f5edcf"><text id="sceneName" x="60" y="338" class="comic" font-size="53"></text><text id="sceneNote" x="62" y="387" class="comic" font-size="29"></text></g>
+<g><text id="clockText" x="62" y="277" fill="#ffce58" font-size="28" class="type"></text><text id="sceneCount" x="928" y="277" text-anchor="end" fill="#c0cbd2" font-size="27" class="comic"></text></g>
+<g id="rec" opacity="0"><circle id="recDot" cx="820" cy="372" r="9" fill="#ff746c"/><text x="840" y="382" fill="#ff746c" class="comic" font-size="27">REC</text></g>
+<g id="secretLabels" class="comic" font-size="24" text-anchor="middle" fill="#101b30"><g id="secret1"><path d="M-101-23H101V23H-101Z" fill="#ffce58" class="ink" stroke-width="3"/><text y="8">GİZLİ GÖREV</text></g><g id="secret2"><path d="M-101-23H101V23H-101Z" fill="#ffce58" class="ink" stroke-width="3"/><text y="8">GİZLİ GÖREV</text></g></g>
+<g id="bubble" opacity="0"><path id="bubbleTail" fill="#f5edcf" stroke="#101827" stroke-width="5"/><rect id="bubbleBox" rx="26" fill="#f5edcf" stroke="#101827" stroke-width="5"/><text id="bubbleText" fill="#162337" text-anchor="middle" class="comic"></text></g>
+<g id="bubble2" opacity="0"><path id="bubbleTail2" fill="#f5edcf" stroke="#101827" stroke-width="5"/><rect id="bubbleBox2" rx="26" fill="#f5edcf" stroke="#101827" stroke-width="5"/><text id="bubbleText2" fill="#162337" text-anchor="middle" class="comic"></text></g>
+<g id="typeCard" opacity="0"><path d="M62 446L925 460 915 716 70 702Z" fill="#f5edcf" stroke="#101827" stroke-width="6"/><text id="typeText" fill="#152538" class="type" font-size="36"></text></g>
+<g id="doubleTuco" opacity="0"><text x="492" y="778" text-anchor="middle" fill="#ffce58" stroke="#101827" stroke-width="8" paint-order="stroke" font-size="105" class="comic">TUCO ×2</text></g>
+<g id="stamp" opacity="0" transform="translate(830 605) rotate(-10)"><rect x="-322" y="-41" width="644" height="82" fill="#f5edcf" stroke="#a33131" stroke-width="8"/><text y="-5" fill="#a33131" text-anchor="middle" class="type" font-size="25">RENK, KOKU VE GÖRÜNÜM</text><text y="25" fill="#a33131" text-anchor="middle" class="type" font-size="25">İTİBARİ İLE</text></g>
+<g id="counter" opacity="0"><path d="M649 187H943V261H649Z" fill="#c4ce9b" stroke="#101827" stroke-width="6"/><text id="counterText" x="796" y="238" fill="#142a2b" font-size="43" class="comic" text-anchor="middle">2.500 TL</text></g>
+<g id="periodic" opacity="0" class="comic" fill="#f5edcf"><g transform="translate(677 148) scale(.75)"><path d="M0 0H150V130H0Z" fill="#386146" stroke="#f5edcf" stroke-width="4"/><text x="12" y="26" font-size="20">50</text><text x="75" y="102" font-size="84" text-anchor="middle">Tu</text></g><g transform="translate(810 148) scale(.75)"><path d="M0 0H150V130H0Z" fill="#386146" stroke="#f5edcf" stroke-width="4"/><text x="12" y="26" font-size="20">27</text><text x="75" y="102" font-size="84" text-anchor="middle">co</text></g><text x="800" y="287" font-size="24" text-anchor="middle">Tuco — Tuco — ?? — ??</text></g>
+<g id="ending" opacity="0"><rect width="1080" height="1920" fill="#101b30" opacity=".96"/><text x="492" y="450" fill="#afbdc9" text-anchor="middle" class="comic" font-size="29">CUMHURİYET MEYDANI</text><text x="492" y="500" fill="#afbdc9" text-anchor="middle" class="comic" font-size="29">DOSYA KAPANDI</text><text id="endingText" x="492" y="635" text-anchor="middle" fill="#f5edcf" class="type" font-size="47"></text><text id="endingSon" x="492" y="905" text-anchor="middle" fill="#ffce58" class="comic" font-size="134">SON</text><g id="endStatue" transform="translate(492 1190) scale(1.2)"></g></g>
+<g id="subtitle"><rect x="40" y="1410" width="910" height="126" rx="8" fill="#0c1627"/><path d="M60 1412H930" stroke="#ffce58" stroke-width="4"/><text id="subtitleName" x="62" y="1448" fill="#ffce58" class="comic" font-size="26"></text><text id="subtitleText" x="62" y="1485" fill="#f5edcf" class="comic" font-size="28"></text></g>
+</svg></main><nav id="controls" aria-label="Animasyon kontrolleri"><button id="toggle">Duraklat</button><button id="restart">Baştan</button><button id="soundToggle" aria-pressed="false">Sesi aç</button><select id="sceneSelect" aria-label="Sahneye git"></select><input id="progress" type="range" min="0" max="1000" value="0" aria-label="İlerleme"><output id="timeDisplay"></output></nav><audio id="soundtrack" src="assets/reels-audio.wav" preload="none"></audio><p id="accessibleCaption" class="sr-only" aria-live="off"></p><noscript>Animasyonu izlemek için JavaScript’i etkinleştirin.</noscript><script>if(new URLSearchParams(location.search).get('render')==='1')document.body.classList.add('render');</script><script>'use strict';
+(() => {
+const $=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+const el=(tag,attrs={},parent)=>{const n=document.createElementNS(NS,tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);if(parent)parent.appendChild(n);return n;};
+const attr=(id,attrs)=>{const n=typeof id==='string'?$(id):id;for(const[k,v]of Object.entries(attrs))n.setAttribute(k,v);};
+const visible=(id,on)=>attr(id,{opacity:on?1:0});
+const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
+const lerp=(a,b,p)=>a+(b-a)*clamp(p,0,1);
+const ease=p=>1-Math.pow(1-clamp(p,0,1),3);
+const renderMode=new URLSearchParams(location.search).get('render')==='1';
+const reduced=!renderMode && matchMedia('(prefers-reduced-motion: reduce)').matches;
+// Every moving part is sampled from the master clock, including after backward seeks.
+// Every pose is sampled from the source clock; the local WAV follows playback.
+for(let i=0;i<55;i++){el('circle',{cx:28+(i*173)%1550,cy:30+(i*67)%332,r:i%5===0?2.7:1.3,opacity:.25+(i%4)*.17},$('stars'));}
+for(let i=0;i<28;i++){el('rect',{x:i<12?30+(i%6)*47:1080+(i%10)*49,y:385+Math.floor(i/10)%2*54,width:11,height:20,rx:2},$('windows'));}
+const people={
+ p1:{name:'NGS219',x:342,skin:'#e6b68e',hair:'#293244',shirt:'#788b8c',pants:'#273448',detail:'tie'},
+ p2:{name:'NGS239',x:552,skin:'#d4a17c',hair:'#4c352d',shirt:'#ad9d74',pants:'#344757',detail:'recorder'},
+ x57:{name:'X57 · Cenk',x:1040,skin:'#e4b087',hair:'#382f2e',shirt:'#c76b55',pants:'#8ab5b1',detail:'shorts'},
+ x56:{name:'X56 · Tuco',x:1260,skin:'#e9c2a2',hair:'#b79553',shirt:'#739b9a',pants:'#4a586a',detail:'bag'}
+};
+function drawCharacter(id,p){
+ const root=el('g',{id,'class':'ink'},$('characters'));
+ el('ellipse',{cx:0,cy:0,rx:67,ry:13,fill:'#142333',opacity:'.35',stroke:'none'},root);
+ const body=el('g',{id:id+'Body'},root);
+ const legs=el('g',{},body);
+ for(const side of [-1,1]){
+  const l=el('g',{id:id+(side<0?'LegL':'LegR')},legs);
+  el('path',{id:id+(side<0?'ShinL':'ShinR'),d:`M${side*19} -83L${side*26} -17`,stroke:p.detail==='shorts'?p.skin:p.pants,'stroke-width':25,fill:'none'},l);
+  if(p.detail==='shorts')el('path',{d:`M${side*18} -86L${side*22} -60`,stroke:p.pants,'stroke-width':35,fill:'none'},l);
+  el('path',{d:`M${side*27} -13L${side*40} -7H${side*15}`,stroke:'#e7dfc3','stroke-width':17,fill:'none'},l);
+ }
+ el('path',{d:'M-43-192Q0-211 44-190L49-83Q0-64-49-83Z',fill:p.shirt},body);
+ el('path',{d:'M-29-194Q0-164 30-194',fill:'none','stroke-width':4},body);
+ for(const side of [-1,1]){
+  const arm=el('g',{id:id+(side<0?'ArmL':'ArmR')},body);
+  el('path',{d:`M${side*42}-179L${side*64}-126 ${side*49}-94`,stroke:p.shirt,'stroke-width':23,fill:'none'},arm);
+  el('ellipse',{cx:side*49,cy:-93,rx:12,ry:15,fill:p.skin,'stroke-width':4},arm);
+ }
+ if(p.detail==='tie'){
+  el('path',{d:'M-13-185L0-169 13-185 2-136-12-147Z',fill:'#e1b64e','stroke-width':3},body);
+  el('path',{d:'M-40-109L-22-115-27-101-10-105M18-91L28-105 40-94',fill:'none',stroke:'#182837','stroke-width':4},body);
+ }
+ if(p.detail==='recorder'){
+  el('path',{d:'M11-142H40V-112H11Z',fill:'#807954','stroke-width':4},body);
+  el('rect',{x:17,y:-134,width:15,height:25,rx:3,fill:'#263747','stroke-width':3},body);
+  el('circle',{id:'recorderButton',cx:24,cy:-125,r:3,fill:'#ed7464',stroke:'none'},body);
+ }
+ if(p.detail==='bag'){
+  el('path',{d:'M-32-193L49-100',stroke:'#704a35','stroke-width':13,fill:'none'},body);
+  el('path',{d:'M15-140L65-134 65-79 14-83Z',fill:'#9c6a40','stroke-width':5},body);
+  el('path',{d:'M15-139L40-113 65-133',fill:'#b68250','stroke-width':4},body);
+  el('circle',{cx:42,cy:-112,r:4,fill:'#e4bb68','stroke-width':2},body);
+ }
+ const head=el('g',{id:id+'Head'},body);
+ if(p.detail==='tie')el('path',{d:'M-48-220Q-72-298-7-316Q66-301 49-219',fill:p.shirt},head);
+ el('ellipse',{cx:-45,cy:-242,rx:12,ry:16,fill:p.skin,'stroke-width':4},head);
+ el('ellipse',{cx:45,cy:-242,rx:12,ry:16,fill:p.skin,'stroke-width':4},head);
+ el('path',{d:'M-45-267Q-38-307 1-301Q48-299 47-257L39-217Q0-182-36-218Z',fill:p.skin},head);
+ el('path',{d:id==='x57'?'M-47-269Q-47-309-10-308L-19-320 10-310 25-315 45-282 43-264 20-283-5-270-17-282Z':'M-46-268Q-43-312 5-308Q45-310 48-269L21-283-1-271-14-285Z',fill:p.hair,'stroke-width':4},head);
+ for(const side of [-1,1]){
+  el('ellipse',{id:id+(side<0?'EyeL':'EyeR'),cx:side*19,cy:-253,rx:13,ry:16,fill:'#fff5dd','stroke-width':3},head);
+  el('circle',{cx:side*19+2,cy:-251,r:5,fill:'#172332',stroke:'none'},head);
+ }
+ el('path',{id:id+'Brows',d:'M-33-277L-10-279M10-279L32-275',fill:'none','stroke-width':5},head);
+ el('path',{d:'M0-252L-5-234H4',fill:'none','stroke-width':3},head);
+ el('ellipse',{id:id+'Mouth',cx:4,cy:-221,rx:13,ry:3,fill:'#703c3e','stroke-width':3},head);
+ el('path',{d:'M-22-213L-16-210M20-210L27-216',stroke:'#986d57','stroke-width':2},head);
+ if(p.detail==='tie'){
+  el('path',{d:'M17-304L26-346 37-354',fill:'none','stroke-width':5},head);
+  el('circle',{cx:38,cy:-354,r:5,fill:'#ffce58','stroke-width':3},head);
+ }
+ if(p.detail==='bag'){
+  el('path',{d:'M0-309L4-340M3-323L-10-336',stroke:'#8cab6c','stroke-width':5,fill:'none'},head);
+  el('path',{d:'M4-337Q-13-342-9-363L4-354Z',fill:'#dc8279','stroke-width':3},head);
+  el('path',{d:'M9-341L17-350',stroke:'#edc598','stroke-width':2},head);
+ }
+ const hat=el('g',{id:id+'Hat',opacity:0},head);
+ el('path',{d:'M-35-294L-6-370 32-298Z',fill:id==='p1'?'#dd8e80':'#e3bc59','stroke-width':4},hat);
+ el('path',{d:'M-24-319L21-318M-13-344L9-340',stroke:'#f5edcf','stroke-width':5},hat);
+ el('circle',{cx:-6,cy:-373,r:9,fill:'#f5edcf','stroke-width':3},hat);
+ const name=el('text',{x:0,y:36,'text-anchor':'middle',fill:'#e4e3cd',stroke:'none','font-size':18,'class':'comic'},root);name.textContent=p.name;
+}
+for(const[id,p]of Object.entries(people))drawCharacter(id,p);
+for(let i=0;i<10;i++)el('use',{id:'note'+i,href:'#banknote',opacity:0},$('money'));
+for(let i=0;i<40;i++)el('path',{id:'conf'+i,d:'M-5-3H5V3H-5Z',fill:['#ffce58','#e68c7b','#91c6b4','#f5edcf'][i%4]},$('confetti'));
+$('endStatue').appendChild($('statue').cloneNode(true));
+// Avoid duplicate IDs in the closing-card illustration.
+$('endStatue').querySelectorAll('[id]').forEach(n=>{n.id='end-'+n.id;});
+$('end-statue').setAttribute('transform','translate(0 0) scale(.8)');
+const scenes=[], cues=[];
+let cursor=0;
+function scene(number,title,note,time,expression,build){
+ const s={number,title,note,time,expression,start:cursor,cues:[]};scenes.push(s);
+ const say=(who,text,opts={})=>{const duration=opts.duration||Math.max(1.6,text.length*.06);const c={who,text,start:cursor,end:cursor+duration,...opts};cues.push(c);s.cues.push(c);cursor+=duration+.12;return c;};
+ const wait=n=>{cursor+=n;};
+ build(s,say,wait);s.end=cursor;return s;
+}
+function scene01(){return scene(1,'Gece mesaisi','Cumhuriyet Meydanı · herkes çok normal','02:00','suspicious',(s,say,wait)=>{wait(4.2);});}
+function scene02(){return scene(2,'İki motor, iki yabancı','Heykelin dibine park edilir.','02:00','raised',(s,say,wait)=>{wait(1.3);say('whisper','psst psst...',{duration:1.8});wait(.5);});}
+function scene03(){return scene(3,'Doğru adres','Tesadüfün böylesi.','02:01','shock',(s,say)=>{say('x57','Kusura bakmayın, birini mi bekliyorsunuz?');say('x57','Napıyorsunuz kimi bekliyorsunuz, gece gece torbacı mı bekliyorsunuz?');s.wink=say('p1','Aynen kanka, torbacı bekliyoruz.').start;});}
+function scene04(){return scene(4,'Pazarlık','Sarı poşet sahneye girer.','02:01','sideeye',(s,say,wait)=>{say('x56','Ne lazım?');say('x57','Cigara var.');say('p1','Kaçtan vereceksin?');say('x57','2.500.');say('p1','Tamam, alalım bir tane.');say('x57','Birer sigara içelim mi?');say('x57','Versene çantadan bir paket.');s.handoff=cursor;wait(1.8);});}
+function scene05(){return scene(5,'Tamamen spontane','Bir düğmeye basmak bu kadar zor olabilir mi?','02:02','relief',(s,say,wait)=>{s.typing=say('narrator','Olayların spontane gelişmesinden dolayı bu ana kadar aktif hale getirilemeyen kayıt cihazlarımız...');s.rec=cursor-.7;wait(.6);});}
+function scene06(){return scene(6,'Yarı Hollandalı','Çanta orijinal. Lale yarım.','02:02','eyeroll',(s,say)=>{say('p1','Senin çanta orijinal mi ya?');say('x56','Evet.');say('x57','Kankam Hollandalı.');say('p1','He sen Hollandalı mısın?');say('p2','Aaa.');say('p1','Türk değilsin? Türkçe konuşmayı biliyor musun?');say('x57','Biliyor.');say('x56','Yarı.');say('x57','Anne Hollandalı.');say('p1','Senin ses tonun da garip ama, orijinal mi?');say('x56','Orijinal.');});}
+function scene07(){return scene(7,'İsim, lütfen','Aynı isim. Aynı anda.','02:03','shock',(s,say)=>{say('p1','Sizin isminiz ne?');s.double=say('both','Tuco.',{duration:2.1});say('p2','Türk ismin yok mu senin?');say('x56','Cık.');say('x57','Reis şöyle bırakayım ben.');});}
+function scene08(){return scene(8,'Buca’da denk geldik','Ahşap bank, sessiz tanık.','02:04','facepalm',(s,say,wait)=>{wait(2);say('p1','Senin isim ne?');say('x57','Cenk.');say('x57','Benim de annem Romanyalı. Ama ben yerlisiyim buranın.');say('p1','Siz nasıl buldunuz birbirinizi? Bir Hollandalı bir Türk.');say('x57',"Valla nasıl bulduk, çok güzel bulduk ya. Buca'da denk geldik.");say('p1',"He, İzmir'de.");say('x57','Aynen.');});}
+function scene09(){return scene(9,'Say say…','Yolda bulsan sayacaksın.','02:04','nod',(s,say)=>{s.count=say('p2','İki, dört... yirmi dört, yirmi beş. Al baba.');say('x57','Eyvallah baba. Kaç var burada?');say('p1','Say say, yolda bulsan sayacaksın.');});}
+function scene10(){return scene(10,'Bir yerden tanıdık…','Aile bağları biraz karışık.','02:05','suspicious',(s,say)=>{say('p2','Tuco... O şey değil miydi ya?');say('x56','Tuco Salamanca.');say('x57','Tuco Salamanca.');say('x56',"Salamanca'nın kuzenleriyiz biz.");});}
+function scene11(){return scene(11,'Kütük meselesi','Ağrı → Romanya → bu meydan','02:05','confused',(s,say)=>{say('p2','Sen aslen buralı mısın?');say('x57','Benim kütüğüm Ağrı, annem Romanyalı.');say('p1','Sende de Ağrılı konuşması yok.');say('x57','Doğma büyüme burası olunca şive falan yok.');});}
+function scene12(){return scene(12,'Canınızın sağlığı','Partiye geç kalmayalım.','02:06','relief',(s,say)=>{say('p2','Bizim doğum günü partimiz var, biz gidiyoruz. Var mı bizden bir isteğiniz?');say('x57','Canınızın sağlığı.');say('x57','Tanıştığıma çok memnun oldum.');say('p1','Biz de öyle.');say('p2','Tuco muydu baba?');say('x56','Tuco, afiyet olsun.');say('x57','Afiyet olsun.');});}
+function scene13(){return scene(13,'Dosya kapandı','Bir heykelin daha mesaisi bitti.','02:07','wink',(s,say,wait)=>{say('ending','1 paket. 2.500 TL. 2 Tuco. 0 Türk ismi.',{duration:5.2});wait(1);});}
+[scene01,scene02,scene03,scene04,scene05,scene06,scene07,scene08,scene09,scene10,scene11,scene12,scene13].forEach(fn=>fn());
+const duration=cursor, clock={t:0};
+const names={...Object.fromEntries(Object.entries(people).map(([k,p])=>[k,p.name])),both:'X57 + X56',whisper:'X57 + X56',narrator:'TUTANAK',ending:'DOSYA KAPANDI'};
+scenes.forEach(s=>{const o=document.createElement('option');o.value=s.number-1;o.textContent=`${s.number}. ${s.title}`;$('sceneSelect').appendChild(o);});
+function wrap(text,max){const lines=[];let line='';for(const word of text.split(' ')){if((line+' '+word).trim().length>max&&line){lines.push(line);line=word;}else line+=(line?' ':'')+word;}if(line)lines.push(line);return lines;}
+function setLines(id,lines,x,y,gap){const n=$(id);n.replaceChildren();for(const [i,line]of lines.entries()){const t=el('tspan',{x,y:y+i*gap},n);t.textContent=line;}}
+function bubble(id,who,text){
+ const suffix=id==='bubble2'?'2':'';
+ const p=people[who],x=p.x;const lines=wrap(text,32),w=Math.max(190,Math.min(550,Math.max(...lines.map(l=>l.length))*15+54));
+ const h=lines.length*34+38, bx=clamp(x-w/2,40,1560-w), by=360-h;
+ attr('bubbleBox'+suffix,{x:bx,y:by,width:w,height:h});
+ attr('bubbleTail'+suffix,{d:`M${x-21} 358L${x+4} 439 ${x+26} 358Z`});
+ setLines('bubbleText'+suffix,lines,bx+w/2,by+44,34);visible(id,true);
+}
+// The sound engine follows the same movie clock. Only short sounds are scheduled;
+// there is no timer-driven catch-up queue. Discontinuities always discard voices.
+const sound={profiles:{p1:{hz:125,interval:.145,pitch:.65,rate:.94,type:'triangle'},p2:{hz:170,interval:.13,pitch:.83,rate:1.02,type:'triangle'},x57:{hz:230,interval:.09,pitch:1.05,rate:1.24,type:'square'},x56:{hz:365,interval:.12,pitch:1.55,rate:.97,type:'sine'}}};
+let lastCue=undefined,lastScene=-1;
+function statueFace(s,t){
+ const e=s.expression;
+ let eyes=e==='shock'?10:e==='eyeroll'?3:6;
+ attr('statueEyeL',{ry:eyes,cy:e==='eyeroll'?-143:-137});
+ attr('statueEyeR',{ry:e==='wink'&&t>2?1:eyes,cy:e==='eyeroll'?-143:-137});
+ const mouths={shock:'M-7-118Q4-136 15-117Q4-101-7-118',relief:'M-11-119Q2-105 17-120',confused:'M-10-114L3-120 17-115',sideeye:'M-9-114L15-114',facepalm:'M-9-115Q2-124 15-115',suspicious:'M-10-114L15-117'};
+ attr('statueMouth',{d:mouths[e]||'M-9-115Q3-107 16-117'});
+ attr('statueBrows',{d:e==='shock'?'M-24-157L-7-159M9-159L25-157':e==='confused'?'M-24-156L-7-159M9-151L25-147':'M-22-151L-8-152M9-152L23-150'});
+ visible('facepalm',e==='facepalm');visible('sigh',e==='relief'&&t<2.5);
+ attr('statueUpper',{transform:e==='nod'&&!reduced?`rotate(${Math.sin(t*3)*3} 0 -30)`:'rotate(0)'});
+ attr('end-statueEyeR',{ry:t>2?1:6});
+}
+function render(){
+ const t=clock.t;const s=scenes.find(s=>t>=s.start&&t<s.end)||scenes[12],n=s.number,l=t-s.start;
+ const cue=s.cues.find(c=>t>=c.start&&t<c.end)||null;
+ if(lastScene!==n){$('sceneName').textContent=s.title;$('sceneNote').textContent=s.note;$('clockText').textContent=s.time;$('sceneCount').textContent=`${n} / 13`;$('sceneSelect').value=n-1;lastScene=n;lastCue=undefined;}
+ if(lastCue!==cue){
+  visible('bubble',false);visible('bubble2',false);
+  if(cue){
+   if(cue.who==='both'||cue.who==='whisper'){bubble('bubble','x57',cue.text);bubble('bubble2','x56',cue.text);}
+   else if(people[cue.who])bubble('bubble',cue.who,cue.text);
+   $('subtitleName').textContent=names[cue.who];
+   setLines('subtitleText',wrap(cue.text,98),50,858,30);
+   // Long captions use two lines without intruding on the attribution.
+   if(cue.text.length>98){attr('subtitleName',{y:818});attr('subtitleText',{'font-size':25});}else{attr('subtitleName',{y:824});attr('subtitleText',{'font-size':28});}
+   $('accessibleCaption').textContent=names[cue.who]+': '+cue.text;
+  }else{$('subtitleName').textContent=n===1?'02:00 · CUMHURİYET MEYDANI':s.title;$('subtitleText').textContent=n===1?'Gecenin en gizli olmayan görevi.':'';$('accessibleCaption').textContent=s.title;}
+  lastCue=cue;
+ }
+ statueFace(s,l);
+ // A little breathing, real leg pivots, expressive mouths and gesturing arms.
+ const arrive=n===2?ease(l/1.65):n>2?1:0;
+ for(const[id,p]of Object.entries(people)){
+  const outsider=id.startsWith('x');let x=p.x+(outsider?(1-arrive)*680:0),y=730;
+  let walking=outsider&&n===2&&l<1.65;
+  if(n===12&&l>s.end-s.start-2){const exit=ease((l-(s.end-s.start-2))/2);if(!outsider){x-=exit*620;walking=true;}}
+  for(const side of [-1,1])attr(id+(side<0?'ShinL':'ShinR'),{d:!outsider&&n<=3?`M${side*19} -83L${side*40} -57 ${side*26} -17`:`M${side*19} -83L${side*26} -17`});
+  const talking=cue&&(cue.who===id||((cue.who==='both'||cue.who==='whisper')&&outsider));
+  const breath=reduced?0:Math.sin(t*2.6+(outsider?2:0))*1.6;
+  const bounce=walking&&!reduced?Math.abs(Math.sin(l*15))*5:0;
+  attr(id,{transform:`translate(${x.toFixed(2)} ${(y-bounce).toFixed(2)})`,opacity:outsider?arrive:1});
+  attr(id+'Body',{transform:`translate(0 ${breath.toFixed(2)}) scale(${talking&&!reduced?1+Math.sin(t*12)*.012:1} ${talking&&!reduced?1-Math.sin(t*12)*.012:1})`});
+  attr(id+'LegL',{transform:`rotate(${walking&&!reduced?Math.sin(l*15)*25:0} -19 -83)`});
+  attr(id+'LegR',{transform:`rotate(${walking&&!reduced?-Math.sin(l*15)*25:0} 19 -83)`});
+  let arm=talking&&!reduced?-12+Math.sin(t*5)*9:0;
+  if(id==='p2'&&n===5)arm=-40+Math.sin(l*18)*16;
+  if(id==='x56'&&n===4&&t>s.handoff)arm=-45*Math.sin(clamp((t-s.handoff)/1.8,0,1)*Math.PI);
+  if(id==='x57'&&n===8&&l<1.5)arm=35*Math.sin(l/1.5*Math.PI);
+  attr(id+'ArmR',{transform:`rotate(${arm} 42 -179)`});
+  attr(id+'ArmL',{transform:`rotate(${walking?-arm:talking?8:0} -42 -179)`});
+  const giggle=id==='x56'&&n===6&&s.cues[2]&&t>s.cues[2].start&&t<s.cues[3].start;
+  attr(id+'Head',{transform:`rotate(${giggle&&!reduced?Math.sin(t*20)*4:talking&&!reduced?Math.sin(t*4)*2:0} 0 -220)`});
+  const syllablePhase=cue?((t-cue.start)/(sound.profiles[id]?.interval||.13))%1:0;
+  attr(id+'Mouth',{ry:talking?(reduced?8:3+13*Math.max(0,Math.sin(syllablePhase*Math.PI*2))):giggle?(reduced?8:4+(Math.sin(t*24)+1)*6):3,rx:talking?14:11});
+  const wink=n===3&&t>s.wink+.7&&t<s.wink+1.5;
+  attr(id+'EyeR',{ry:!outsider&&wink?1:16});
+  attr(id+'Brows',{d:talking?'M-33-282L-10-279M10-279L32-284':id==='p2'&&n===5?'M-33-278L-10-285M10-285L32-278':'M-33-277L-10-279M10-279L32-275'});
+  visible(id+'Hat',!outsider&&n===12&&t>=s.cues[1].start);
+ }
+ visible('secretLabels',n===1);
+ if(n===1){const fall=ease(l/.85);const hide=ease((l-2.15)/.65);for(let i=1;i<=2;i++)attr('secret'+i,{transform:`translate(${i===1?342:552} ${lerp(-50,505,fall)+hide*110}) rotate(${i===1?-9:8}) scale(${1-hide*.9})`,opacity:1-hide});}
+ visible('motorcycles',n>=2);
+ if(n===2){attr('bike1',{transform:`translate(${1120+(1-ease(l/1.25))*650} 620) scale(.75)`});attr('bike2',{transform:`translate(${1385+(1-ease((l-.25)/1.3))*650} 600) scale(.69)`});}
+ else{attr('bike1',{transform:'translate(1120 620) scale(.75)'});attr('bike2',{transform:'translate(1385 600) scale(.69)'});}
+ const recording=n>5||(n===5&&t>=s.rec);visible('rec',recording);attr('recDot',{opacity:reduced?1:.45+.55*(Math.sin(t*4)>0)});
+ visible('typeCard',n===5);if(n===5){const letters=Math.floor(clamp(l/(s.typing.end-s.typing.start-.9),0,1)*s.typing.text.length);setLines('typeText',wrap(s.typing.text.slice(0,letters),65),255,228,43);}
+ visible('windmill',n===6);attr('sails',{transform:`rotate(${reduced?20:l*38})`});
+ visible('doubleTuco',n===7&&cue===s.double);
+ visible('stamp',n===8&&l>.75&&l<2.8);
+ if(n===8){const scale=reduced?1:lerp(2.1,1,ease((l-.75)/.22));attr('stamp',{transform:`translate(830 605) rotate(-10) scale(${scale})`});}
+ const hasPacket=n>=4&&n<13&&(n>4||t>=s.handoff);
+ visible('package',hasPacket);
+ let px=1072,py=665,sz=.7;
+ if(n===4){const p=ease((t-s.handoff)/1.6);px=lerp(1300,1072,p);py=lerp(620,665,p)-Math.sin(p*Math.PI)*65;}
+ if(n===8){const p=ease(l/1.1);px=lerp(1072,620,p);py=lerp(665,647,p)-Math.sin(p*Math.PI)*90;sz=lerp(.7,1,p);}
+ if(n>8){px=620;py=647;sz=1;}
+ attr('package',{transform:`translate(${px} ${py}) scale(${sz})`});
+ visible('counter',n===9);if(n===9){const p=clamp((t-s.count.start)/(s.count.end-s.count.start),0,1);$('counterText').textContent=(Math.round(p*25)*100).toLocaleString('tr-TR')+' TL';}
+ for(let i=0;i<10;i++){
+  const active=n===9&&t<s.count.end+.5;visible('note'+i,active);
+  if(active){const p=((l*.6+i*.13)%1);attr('note'+i,{transform:`translate(${lerp(552,1040,p)} ${590-Math.sin(p*Math.PI)*130-i*3}) rotate(${Math.sin(p*6+i)*20}) scale(.7)`,opacity:Math.sin(p*Math.PI)});}
+ }
+ visible('desert',n===10);attr('desert',{opacity:n===10?.20:0});visible('periodic',n===10);
+ // The title homage leaves the regular dialogue area clear.
+ attr('bubble',{transform:'translate(0 0)'});
+ visible('policeLights',n===12);attr('policeLights',{opacity:n===12?(reduced?.4:.3+.5*Math.abs(Math.sin(l*3))):0});
+ visible('confetti',n===12&&t>=s.cues[1].start);
+ if(n===12){for(let i=0;i<40;i++){const p=((l*.16+i*.037)%1);attr('conf'+i,{transform:`translate(${190+(i*113)%1250} ${100+p*630}) rotate(${reduced?i*17:l*60+i*17})`,opacity:1-p*.6});}}
+ visible('ending',n===13);if(n===13){const full=s.cues[0].text;const count=Math.floor(clamp(l/2.7,0,1)*full.length);$('endingText').textContent=full.slice(0,count);attr('endingSon',{opacity:clamp((l-2.5)/.6,0,1)});}
+ // Comedic punch-ins pivot around the speaking cast, not the UI or captions.
+ const emphasis=!reduced&&((n===3&&l<.55)||(n===8&&l>.75&&l<1.08)||(n===7&&cue===s.double));
+ const zoom=emphasis?1.025:1;const shake=emphasis&&n===8?Math.sin(l*100)*4:0;
+ attr('camera',{transform:`translate(${800-800*zoom+shake} ${475-475*zoom}) scale(${zoom})`});
+ portraitLayout(s,cue,t,l);
+ $('progress').value=Math.round(t/duration*1000);$('progress').setAttribute('aria-valuetext',`${format(t)} / ${format(duration)}`);
+ $('timeDisplay').textContent=`${format(t)} / ${format(duration)}`;
+
+}
+function format(sec){sec=Math.floor(sec);return `${Math.floor(sec/60)}:${String(sec%60).padStart(2,'0')}`;}
+
+// Safe rectangle: x=60..940, y=250..1540. Everything outside is scenery.
+const positions={p1:150,p2:365,x57:610,x56:820};
+function portraitLayout(s,cue,t,l){
+ const n=s.number;
+ attr('camera',{transform:'translate(0 0)'});
+ attr('statue',{transform:'translate(492 889) scale(.87)'});
+ attr('bench',{transform:'translate(-145 455) scale(1.1)'});
+ attr('lamp',{transform:'translate(-54 495) scale(.82)'});
+ attr('windmill',{transform:'translate(850 895) scale(.78)'});
+ for(const [id,p] of Object.entries(people)){
+  const old=$(id).transform.baseVal.consolidate().matrix;
+  const x=positions[id]+(old.e-p.x)*.35;
+  attr(id,{transform:`translate(${x} ${1350+(old.f-730)}) scale(1.18)`});
+ }
+ attr('bike1',{transform:`translate(${696+(n===2?(1-ease(l/1.25))*380:0)} 1057) scale(.70)`});
+ attr('bike2',{transform:`translate(${849+(n===2?(1-ease((l-.25)/1.3))*380:0)} 1005) scale(.60)`});
+ if(n===1){
+  const hide=ease((l-2.15)/.65),fall=ease(l/.85);
+  for(let i=1;i<=2;i++)attr('secret'+i,{transform:`translate(${i===1?150:365} ${lerp(720,930,fall)+hide*65}) rotate(${i===1?-9:8}) scale(.88)`,opacity:1-hide});
+ }
+ visible('bubble2',false);
+ if(cue && (people[cue.who] || ['both','whisper'].includes(cue.who))){
+  const lines=wrap(cue.text,38),height=lines.length*49+52,by=454;
+  const who=people[cue.who]?cue.who:'x57',x=positions[who];
+  attr('bubbleBox',{x:60,y:by,width:870,height});
+  attr('bubbleTail',{d:`M${x-32} ${by+height-2}L${x} ${by+height+65} ${x+30} ${by+height-2}Z`});
+  attr('bubbleText',{'font-size':42});setLines('bubbleText',lines,495,by+56,49);
+ }
+ // Compact repeated captions stay entirely above the 380px Instagram footer.
+ attr('subtitleName',{x:62,y:1448,'font-size':26});
+ attr('subtitleText',{'font-size':28});
+ setLines('subtitleText',wrap(cue?cue.text:(n===1?'Gecenin en gizli olmayan görevi.':''),59),62,1485,32);
+ if(n===5){
+  const letters=Math.floor(clamp(l/(s.typing.end-s.typing.start-.9),0,1)*s.typing.text.length);
+  setLines('typeText',wrap(s.typing.text.slice(0,letters),37),96,509,49);
+ }
+ attr('stamp',{transform:`translate(490 1180) rotate(-7) scale(${n===8?lerp(1.2,1,ease((l-.75)/.22)):1})`});
+ attr('counter',{transform:'translate(-302 524)'});
+ attr('periodic',{transform:'translate(-308 548)'});
+ // Packet moves from the bag, to Cenk's pocket, then onto the bank.
+ let px=667,py=1238,sz=.9;
+ if(n===4){const p=ease((t-s.handoff)/1.6);px=lerp(872,667,p);py=lerp(1200,1238,p)-Math.sin(p*Math.PI)*95;}
+ if(n===8){const p=ease(l/1.1);px=lerp(667,464,p);py=lerp(1238,1190,p)-Math.sin(p*Math.PI)*90;}
+ if(n>8){px=464;py=1190;}
+ attr('package',{transform:`translate(${px} ${py}) scale(${sz})`});
+ for(let i=0;i<10;i++){
+  const p=((l*.6+i*.13)%1);
+  attr('note'+i,{transform:`translate(${lerp(365,610,p)} ${1180-Math.sin(p*Math.PI)*190-i*3}) rotate(${Math.sin(p*6+i)*20}) scale(.9)`});
+ }
+ attr('desert',{width:1080,height:1410});
+ if(n===12){for(let i=0;i<40;i++){const p=((l*.16+i*.037)%1);attr('conf'+i,{transform:`translate(${70+(i*113)%850} ${500+p*830}) rotate(${l*60+i*17})`});}}
+ if(n===13){const full=s.cues[0].text,count=Math.floor(clamp(l/2.7,0,1)*full.length);setLines('endingText',wrap(full.slice(0,count),24),492,635,66);}
+}
+const reelDuration=89, sourceRate=duration/reelDuration;
+
+// Offline rendering uses the source sound designs, a seeded noise generator and
+// explicit event times. No audio device or wall-clock recording is involved.
+async function renderAudio(){
+ const rate=48000,ctx=new OfflineAudioContext(1,Math.round(reelDuration*rate),rate);
+ const masterGain=ctx.createGain(),musicGain=ctx.createGain(),fxGain=ctx.createGain(),voiceGain=ctx.createGain();
+ masterGain.gain.value=.65;musicGain.gain.value=.19;fxGain.gain.value=.65;voiceGain.gain.value=.55;
+ const compressor=ctx.createDynamicsCompressor();compressor.threshold.value=-12;compressor.knee.value=12;compressor.ratio.value=5;
+ for(const gain of [musicGain,fxGain,voiceGain])gain.connect(masterGain);masterGain.connect(compressor);compressor.connect(ctx.destination);
+ let seed=219239;const random=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
+ const noiseBuffer=ctx.createBuffer(1,rate,rate),noiseData=noiseBuffer.getChannelData(0);
+ for(let i=0;i<noiseData.length;i++)noiseData[i]=random()*2-1;
+ let scheduledTime=0;
+ const canSound=()=>true,busNode=bus=>bus==='music'?musicGain:bus==='voice'?voiceGain:fxGain;
+ function tone({hz=440,to=hz,dur=.12,gain=.14,type='sine',delay=0,bus='fx',filter=0,curve=null}){
+  if(!canSound())return;
+  const now=scheduledTime+delay,osc=ctx.createOscillator(),env=ctx.createGain(),nodes=[env];
+  osc.type=type;osc.frequency.setValueAtTime(hz,now);
+  if(curve)for(const [offset,value]of curve)osc.frequency.exponentialRampToValueAtTime(Math.max(1,value),now+offset);
+  else osc.frequency.exponentialRampToValueAtTime(Math.max(1,to),now+dur);
+  env.gain.setValueAtTime(.0001,now);env.gain.linearRampToValueAtTime(gain,now+.007);env.gain.exponentialRampToValueAtTime(.0001,now+dur);
+  if(filter){const f=ctx.createBiquadFilter();f.type='lowpass';f.frequency.value=filter;osc.connect(f);f.connect(env);nodes.push(f);}else osc.connect(env);
+  env.connect(busNode(bus));osc.start(now);osc.stop(now+dur+.015);
+ }
+ function noise({dur=.15,gain=.1,hz=1800,q=.7,filter='bandpass',delay=0,bus='fx'}){
+  if(!canSound())return;
+  const now=scheduledTime+delay,src=ctx.createBufferSource(),f=ctx.createBiquadFilter(),env=ctx.createGain();
+  src.buffer=noiseBuffer;src.loop=true;f.type=filter;f.frequency.value=hz;f.Q.value=q;
+  env.gain.setValueAtTime(.0001,now);env.gain.linearRampToValueAtTime(gain,now+Math.min(.025,dur/4));env.gain.exponentialRampToValueAtTime(.0001,now+dur);
+  src.connect(f);f.connect(env);env.connect(busNode(bus));src.start(now);src.stop(now+dur+.01);
+ }
+ // Karplus–Strong strings: fresh noise excites a damped delay ring, all in memory.
+ function pluck(hz,twang){
+  if(!canSound())return;
+  const size=Math.max(2,Math.round(ctx.sampleRate/hz)),ring=new Float32Array(size),len=Math.round(ctx.sampleRate*(twang?.9:.36));
+  for(let i=0;i<size;i++)ring[i]=(random()*2-1)*.7;
+  const buffer=ctx.createBuffer(1,len,ctx.sampleRate),data=buffer.getChannelData(0),damping=twang?.996:.982;
+  for(let i=0;i<len;i++){const p=i%size;data[i]=ring[p];ring[p]=(ring[p]+ring[(p+1)%size])*.5*damping;}
+  const src=ctx.createBufferSource(),env=ctx.createGain(),filter=ctx.createBiquadFilter();src.buffer=buffer;filter.type='lowpass';filter.frequency.value=twang?2800:850;
+  env.gain.setValueAtTime(twang?.45:.65,scheduledTime);env.gain.exponentialRampToValueAtTime(.0001,scheduledTime+len/ctx.sampleRate);
+  src.connect(filter);filter.connect(env);env.connect(musicGain);src.start();
+ }
+ function fx(name){
+  if(!canSound())return;
+
+  switch(name){
+   case 'boing':tone({hz:120,to:90,dur:.5,gain:.22,curve:[[.055,510],[.18,165],[.28,260],[.5,90]]});break;
+   case 'engine':tone({hz:48,to:35,dur:1.65,gain:.13,type:'sawtooth',filter:410,curve:[[.65,105],[1.2,62],[1.65,35]]});noise({dur:1.6,gain:.075,hz:190,filter:'lowpass'});break;
+   case 'engineStop':noise({dur:.18,gain:.13,hz:280});tone({hz:70,to:22,dur:.23,gain:.13,type:'triangle'});break;
+   case 'psst':noise({dur:.25,gain:.17,hz:5200,q:.9});break;
+   case 'ding':tone({hz:1320,to:1500,dur:.32,gain:.12});tone({hz:1980,dur:.23,gain:.055,delay:.035});break;
+   case 'rustle':noise({dur:.3,gain:.17,hz:2900});noise({dur:.19,gain:.1,hz:1400,delay:.14});break;
+   case 'type':noise({dur:.027,gain:.11,hz:3000,q:1.8});tone({hz:650,to:300,dur:.035,gain:.05,type:'square',filter:1800});break;
+   case 'rec':tone({hz:1120,dur:.12,gain:.13});break;
+   case 'whoosh':noise({dur:.45,gain:.085,hz:750,q:.6});break;
+   case 'drum':tone({hz:140,to:42,dur:.24,gain:.27});noise({dur:.045,gain:.1,hz:1200});break;
+   case 'stamp':tone({hz:110,to:32,dur:.32,gain:.34});noise({dur:.085,gain:.22,hz:350,filter:'lowpass'});break;
+   case 'paper':noise({dur:.045,gain:.13,hz:3400,q:1.2});break;
+   case 'cash':tone({hz:1250,dur:.22,gain:.13});tone({hz:1880,dur:.5,gain:.13,delay:.13});noise({dur:.065,gain:.13,hz:4200});break;
+   case 'stone':tone({hz:48,to:31,dur:.42,gain:.09,type:'sawtooth',filter:210});noise({dur:.3,gain:.06,hz:160,q:2});break;
+   case 'sigh':noise({dur:.65,gain:.12,hz:620,q:.7});break;
+   case 'giggle':for(let i=0;i<4;i++)tone({hz:[470,630,520,710][i],to:[390,490,430,520][i],dur:.095,gain:.12,delay:i*.11,bus:'voice'});break;
+   case 'party':tone({hz:480,to:860,dur:.6,gain:.11,type:'sawtooth',filter:1600,curve:[[.2,920],[.35,700],[.6,850]]});noise({dur:.5,gain:.13,hz:4500,delay:.12});break;
+   case 'siren':tone({hz:550,dur:1.3,gain:.035,type:'triangle',filter:1800,curve:[[.32,850],[.65,550],[.98,850],[1.3,540]]});break;
+   case 'final':for(const [i,hz]of [146.83,220,293.66,349.23].entries())tone({hz,dur:1.5,gain:.085,delay:i*.035,type:'triangle',filter:1800});break;
+  }
+ }
+ const events=[];
+ const event=(time,name)=>events.push({time,name});
+ for(const s of scenes){event(s.start+.035,'stone');if(s.expression==='relief')event(s.start+.16,'sigh');}
+ event(.82,'boing');event(.96,'boing');
+ const bikes=scenes[1];event(bikes.start+.02,'engine');event(bikes.start+.26,'engine');event(bikes.start+1.65,'engineStop');
+ event(bikes.cues[0].start,'psst');event(bikes.cues[0].start+.65,'psst');
+ event(scenes[2].wink+.7,'ding');event(scenes[3].handoff,'rustle');
+ const typed=scenes[4];event(typed.rec,'rec');
+ for(let i=1;i<=typed.typing.text.length;i++)event(typed.start+i*(typed.typing.end-typed.typing.start-.9)/typed.typing.text.length,'type');
+ const holland=scenes[5];for(let t=holland.start+.4;t<holland.end;t+=1.4)event(t,'whoosh');event(holland.cues[2].start+.2,'giggle');
+ event(scenes[6].double.start,'drum');event(scenes[6].double.start+.14,'drum');
+ event(scenes[7].start+.05,'rustle');event(scenes[7].start+.75,'stamp');
+ const count=scenes[8].count;for(let i=1;i<=25;i++)event(count.start+(i-.5)/25*(count.end-count.start),'paper');event(count.end,'cash');
+ event(scenes[11].cues[1].start,'party');event(scenes[11].start+2,'siren');
+ const ending=scenes[12];for(let i=1;i<=ending.cues[0].text.length;i++)event(ending.start+i*2.7/ending.cues[0].text.length,'type');
+ event(ending.start+2,'ding');event(ending.start+2.8,'final');events.sort((a,b)=>a.time-b.time);
+
+ for(const event of events){scheduledTime=event.time/sourceRate;if(scheduledTime<reelDuration)fx(event.name);}
+ const response=await fetch('assets/background-music.mp3');
+ if(!response.ok)throw new Error('Arka plan müziği yüklenemedi');
+ const musicBuffer=await ctx.decodeAudioData(await response.arrayBuffer());
+ const background=ctx.createBufferSource();background.buffer=musicBuffer;background.loop=true;
+ background.connect(musicGain);background.start(0);
+ musicGain.gain.setValueAtTime(0,0);musicGain.gain.linearRampToValueAtTime(.19,1);
+ for(const cue of cues){
+  if(['ending','narrator','whisper'].includes(cue.who))continue;
+  const ids=cue.who==='both'?['x57','x56']:[cue.who];
+  for(const id of ids){const profile=sound.profiles[id];if(!profile)continue;
+   for(let at=cue.start/sourceRate,i=0;at<cue.end/sourceRate;at+=profile.interval,i++){
+    scheduledTime=at;const char=cue.text[i%cue.text.length];if(!/\S/u.test(char))continue;
+    const hz=profile.hz*(.85+(char.charCodeAt(0)%9)*.045);
+    tone({hz,to:hz*.85,dur:profile.interval*.62,gain:id==='x57'?.10:.14,type:profile.type,bus:'voice',filter:id==='x57'?1100:1600});
+   }
+  }
+ }
+ // A gentle final fade also prevents an abrupt cut at the container boundary.
+ masterGain.gain.setValueAtTime(.65,reelDuration-1.5);masterGain.gain.linearRampToValueAtTime(0,reelDuration);
+ const buffer=await ctx.startRendering(),data=buffer.getChannelData(0);
+ const bytes=new Uint8Array(44+data.length*2),view=new DataView(bytes.buffer);
+ const word=(at,text)=>{for(let i=0;i<text.length;i++)view.setUint8(at+i,text.charCodeAt(i));};
+ word(0,'RIFF');view.setUint32(4,36+data.length*2,true);word(8,'WAVE');word(12,'fmt ');view.setUint32(16,16,true);view.setUint16(20,1,true);view.setUint16(22,1,true);view.setUint32(24,rate,true);view.setUint32(28,rate*2,true);view.setUint16(32,2,true);view.setUint16(34,16,true);word(36,'data');view.setUint32(40,data.length*2,true);
+ for(let i=0;i<data.length;i++)view.setInt16(44+i*2,Math.round(clamp(data[i],-1,1)*32767),true);
+ let result='';const chunk=32768;for(let i=0;i<bytes.length;i+=chunk)result+=String.fromCharCode(...bytes.subarray(i,i+chunk));
+ return btoa(result);
+}
+
+let playhead=0,playing=!renderMode,lastWall=null;
+function seek(seconds){playhead=clamp(Number(seconds)||0,0,reelDuration);clock.t=Math.min(duration-1e-7,playhead*sourceRate);render();syncControls();}
+function syncControls(){
+ $('toggle').textContent=playing?'Duraklat':'Oynat';
+ $('toggle').setAttribute('aria-label',playing?'Animasyonu duraklat':'Animasyonu oynat');
+ $('progress').value=Math.round(playhead/reelDuration*1000);
+ $('progress').setAttribute('aria-valuetext',`${format(playhead)} / ${format(reelDuration)}`);
+ $('timeDisplay').textContent=`${format(playhead)} / ${format(reelDuration)}`;
+}
+const soundtrack=$('soundtrack');let soundEnabled=false;
+function syncSound(){if(!soundEnabled)return;soundtrack.currentTime=playhead;if(playing)void soundtrack.play().catch(()=>{});else soundtrack.pause();}
+$('soundToggle').addEventListener('click',()=>{soundEnabled=!soundEnabled;$('soundToggle').textContent=soundEnabled?'Sesi kapat':'Sesi aç';$('soundToggle').setAttribute('aria-pressed',String(soundEnabled));if(soundEnabled)syncSound();else soundtrack.pause();});
+function toggle(){if(playhead>=reelDuration)seek(0);playing=!playing;lastWall=null;syncSound();syncControls();}
+$('toggle').addEventListener('click',toggle);
+$('restart').addEventListener('click',()=>{playing=true;lastWall=null;seek(0);syncSound();});
+$('progress').addEventListener('input',e=>{seek(Number(e.target.value)/1000*reelDuration);lastWall=null;syncSound();});
+$('sceneSelect').addEventListener('change',e=>{seek(scenes[Number(e.target.value)].start/sourceRate);lastWall=null;syncSound();});
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&!['INPUT','SELECT','BUTTON'].includes(e.target.tagName)){e.preventDefault();toggle();}});
+function fit(){const scale=Math.min(innerWidth/1080,innerHeight/1920);document.documentElement.style.setProperty('--scene-scale',scale);}
+addEventListener('resize',fit);fit();
+const portraitScenes=scenes.map(s=>({...s,start:s.start/sourceRate,end:s.end/sourceRate,cues:s.cues.map(c=>({...c,start:c.start/sourceRate,end:c.end/sourceRate}))}));
+window.TucoReels={duration:reelDuration,width:1080,height:1920,fps:30,renderAudio,scenes:portraitScenes,cues:portraitScenes.flatMap(s=>s.cues),renderAt:seek,pause(){playing=false;syncSound();syncControls();},play(){playing=true;lastWall=null;syncSound();syncControls();}};
+function frame(now){if(playing){if(lastWall!==null)seek(playhead+(now-lastWall)/1000);if(playhead>=reelDuration){playing=false;syncSound();syncControls();}}lastWall=now;requestAnimationFrame(frame);}
+seek(0);if(!renderMode)requestAnimationFrame(frame);
+})();
+</script></body></html>

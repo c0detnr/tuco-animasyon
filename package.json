@@ -1,0 +1,6 @@
+{
+  "name": "tuco-reels-export",
+  "private": true,
+  "scripts": { "render:reels": "node scripts/render-reels.mjs" },
+  "devDependencies": { "playwright-core": "1.56.1" }
+}

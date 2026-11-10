@@ -1,0 +1,53 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 89,
+  "sceneCount": 13,
+  "cueCount": 54,
+  "checkedSamples": 83,
+  "deterministicBackwardSeek": true,
+  "normalPlayback": true,
+  "responsive": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bounds": {
+        "x": 0,
+        "y": 75.33334350585938,
+        "width": 390,
+        "height": 693.333251953125,
+        "scroll": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bounds": {
+        "x": 466.875,
+        "y": 0,
+        "width": 506.25,
+        "height": 900,
+        "scroll": false
+      }
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bounds": {
+        "x": 312.3125,
+        "y": 0,
+        "width": 219.375,
+        "height": 390,
+        "scroll": false
+      }
+    }
+  ],
+  "audio": "Requested background music (h3DVBhneEWc), seeded character murmurs and scene effects, 48 kHz mono; AAC in MP4."
+}

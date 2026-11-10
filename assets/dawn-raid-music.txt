@@ -1,0 +1,2 @@
+Source: https://www.youtube.com/watch?v=7rolP8gZtoY
+Şafak operasyonu (scene 13): starts from the beginning at scene.start; replaces background music and synthesized dawn music. Scene-relative seek/pause/resume. On leaving scene 13, normal background music resumes. Music bus gain: 0.19; master: 0.65.
